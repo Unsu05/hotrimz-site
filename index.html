@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Rimz Detailing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --red: #e60000;
+      --black: #111;
+      --white: #fff;
+      --gray: #222;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+    nav {
+      background-color: rgba(0, 0, 0, 0.95);
+      padding: 1.2rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+    nav ul li a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: var(--red);
+      transition: width 0.3s ease;
+    }
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+    header {
+      height: 100vh;
+      background: url('Backdrop Image - Hot Rimz Detailing.png') center/cover no-repeat;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero-content a {
+      background: var(--red);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.2s ease;
+    }
+    .hero-content a:hover {
+      background: #bb0000;
+      transform: translateY(-3px);
+    }
+    section {
+      padding: 100px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: var(--red);
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .service-card {
+      background-color: var(--gray);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: var(--white);
+    }
+    .service-card p {
+      color: #ccc;
+    }
+    .service-card strong {
+      color: var(--red);
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+    }
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><img src="Hot Rimz Detailing Logo 2025.png" alt="Logo" style="height: 50px;"></div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#addons">Add-Ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <h1>Revive your ride—this is the ultimate car detailing experience.</h1>
+      <a href="#services">Explore Services</a>
+    </div>
+  </header>
+
+
+  <section id="services">
+  <h2>Detailing Services</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>Interior Detail – Gold</h3>
+      <p>Vacuuming, wipe-downs, interior windows, plastics, light stain removal.</p>
+      <p><strong>Sedan:</strong> $79.99<br>
+         <strong>SUV:</strong> $89.99<br>
+         <strong>Truck/Van:</strong> $99.99</p>
+    </div>
+    <div class="service-card" style="border: 2px solid var(--red); position: relative;">
+      <span style="position:absolute; top:-10px; right:-10px; background:var(--red); color:white; font-size:0.8rem; padding:3px 7px; border-radius:4px;">Most Popular</span>
+      <h3>Interior Detail – Platinum</h3>
+      <p>Gold + full carpet and seat extraction, leather reconditioning, deep sanitization, UV protection.</p>
+      <p><strong>Sedan:</strong> $99.99<br>
+         <strong>SUV:</strong> $109.99<br>
+         <strong>Truck/Van:</strong> $119.99</p>
+    </div>
+    <div class="service-card">
+      <h3>Exterior Wash</h3>
+      <p>Hand wash, tire dressing, rim clean, windows, bug/tar removal.</p>
+      <p><strong>All Sizes:</strong> $49.99</p>
+    </div>
+    <div class="service-card">
+      <h3>Full Detail – Gold</h3>
+      <p>Exterior Wash + Interior Gold Detail (light to moderate refresh).</p>
+      <p><strong>Sedan:</strong> $119.99<br>
+         <strong>SUV:</strong> $129.99<br>
+         <strong>Truck/Van:</strong> $139.99</p>
+    </div>
+    <div class="service-card" style="border: 2px solid var(--red); position: relative;">
+      <span style="position:absolute; top:-10px; right:-10px; background:var(--red); color:white; font-size:0.8rem; padding:3px 7px; border-radius:4px;">Most Popular</span>
+      <h3>Full Detail – Platinum</h3>
+      <p>Exterior Wash + Interior Platinum Detail (deep clean + protection).</p>
+      <p><strong>Sedan:</strong> $139.99<br>
+         <strong>SUV:</strong> $149.99<br>
+         <strong>Truck/Van:</strong> $159.99</p>
+    </div>
+  </div>
+</section>
+
+<section id="addons">
+  <h2>Available Add-Ons</h2>
+  <div class="service-grid">
+    <div class="service-card"><h3>Engine Bay Cleaning</h3><p>Degreased and dressed.</p><p><strong>$24.99</strong></p></div>
+    <div class="service-card"><h3>Pet Hair Removal</h3><p>Special tools for heavy hair.</p><p><strong>$24.99</strong></p></div>
+    <div class="service-card"><h3>Odour Elimination</h3><p>Enzyme-based or ozone treatment.</p><p><strong>$29.99</strong></p></div>
+    <div class="service-card"><h3>Salt Stain Removal</h3><p>Targeted winter salt removal.</p><p><strong>$19.99</strong></p></div>
+    <div class="service-card"><h3>Trim Restoration</h3><p>Exterior plastic & rubber renewal.</p><p><strong>$24.99</strong></p></div>
+    <div class="service-card"><h3>Glass Coating</h3><p>Rain & grime repelling sealant.</p><p><strong>$14.99</strong></p></div>
+    <div class="service-card"><h3>Floor Mat Shampoo</h3><p>Heavy-duty floor mat cleaning.</p><p><strong>$9.99</strong></p></div>
+    <div class="service-card"><h3>Headlight Restoration</h3><p>Clarity restoration from oxidation.</p><p><strong>$39.99</strong></p></div>
+    <div class="service-card"><h3>Wheel Deep Clean</h3><p>Brake dust decon treatment.</p><p><strong>$19.99</strong></p></div>
+    <div class="service-card"><h3>Interior Ceramic Spray</h3><p>Hydrophobic dash & console protectant.</p><p><strong>$14.99</strong></p></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Before & After</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>Exterior Revamp</h3>
+      <img src="https://via.placeholder.com/300x180?text=Before" style="width:100%; border-radius:6px; margin-bottom:10px;">
+      <img src="https://via.placeholder.com/300x180?text=After" style="width:100%; border-radius:6px;">
+    </div>
+    <div class="service-card">
+      <h3>Interior Rescue</h3>
+      <img src="https://via.placeholder.com/300x180?text=Before" style="width:100%; border-radius:6px; margin-bottom:10px;">
+      <img src="https://via.placeholder.com/300x180?text=After" style="width:100%; border-radius:6px;">
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <p>“My SUV was a mess after winter — Hot Rimz made it look better than new. Highly recommend the Platinum package!”</p>
+      <p><strong>- Ayesha R.</strong></p>
+    </div>
+    <div class="service-card">
+      <p>“Insanely good attention to detail. The team is professional, fast, and delivers every time.”</p>
+      <p><strong>- Jordan S.</strong></p>
+    </div>
+    <div class="service-card">
+      <p>“Salt stains, crumbs, dog hair… all gone. These guys are the real deal.”</p>
+      <p><strong>- Marcus G.</strong></p>
+    </div>
+  </div>
+</section>
+
+
+  <footer id="contact">
+    <p>Follow us on Instagram @hotrimzdetailing</p>
+    <p>Call or text us at +1-XXX-XXX-XXXX</p>
+    <p>&copy; 2025 Hot Rimz Detailing. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll fallback
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
