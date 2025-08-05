@@ -1,4 +1,4 @@
-"use server"
+//"use server"
 
 export async function sendQuoteEmail(formData: FormData) {
   const firstName = formData.get("firstName") as string
