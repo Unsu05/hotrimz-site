@@ -3,10 +3,10 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
   basePath: process.env.NODE_ENV === 'production' ? '/hotrimz-site' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/hotrimz-site/' : '',
-}
+};
 
-export default nextConfig
+export default nextConfig;
